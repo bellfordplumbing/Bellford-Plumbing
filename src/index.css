@@ -1798,6 +1798,22 @@ textarea {
   font-weight: 800;
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  overflow: hidden;
+}
+
+.form-error {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .success {
   padding: 16px;
   background: #e8f6ee;

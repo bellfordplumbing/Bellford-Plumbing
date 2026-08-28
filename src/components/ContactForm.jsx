@@ -14,34 +14,47 @@ const serviceOptions = [
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState('')
+  const [sending, setSending] = useState(false)
 
-  function onSubmit(e) {
+  async function onSubmit(e) {
     e.preventDefault()
+    setError('')
+    setSending(true)
     const data = new FormData(e.currentTarget)
-    const first = data.get('first')
-    const last = data.get('last')
-    const phone = data.get('phone')
-    const email = data.get('email')
-    const service = data.get('service')
-    const message = data.get('message')
-    const subject = encodeURIComponent(`Service request from ${first} ${last}`)
-    const body = encodeURIComponent(
-      `Name: ${first} ${last}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\n\n${message}`,
-    )
-    window.location.href = `mailto:${company.email}?subject=${subject}&body=${body}`
-    setSent(true)
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString(),
+      })
+      if (!res.ok) throw new Error('Submit failed')
+      setSent(true)
+    } catch {
+      setError('Something went wrong. Call us or try again.')
+      setSending(false)
+    }
   }
 
   if (sent) {
     return (
       <div className="success">
-        Thanks — your email app should open with the request. You can also call us at {company.phone}.
+        Thanks — we received your request. A Bellford plumber will follow up soon. You can also call
+        us at {company.phone}.
       </div>
     )
   }
 
   return (
-    <form className="form" onSubmit={onSubmit}>
+    <form className="form" name="contact" method="POST" onSubmit={onSubmit}>
+      <input type="hidden" name="form-name" value="contact" />
+      <p className="form-honeypot" aria-hidden="true">
+        <label>
+          Don’t fill this out
+          <input name="bot-field" tabIndex={-1} autoComplete="off" />
+        </label>
+      </p>
       <div className="form-intro">
         <p className="form-kicker">Book a plumber</p>
         <h3>Request a visit</h3>
@@ -88,8 +101,9 @@ export default function ContactForm() {
           placeholder="Tell us what is going on with your plumbing."
         />
       </label>
-      <button className="btn btn-primary form-submit" type="submit">
-        Send request
+      {error ? <p className="form-error">{error}</p> : null}
+      <button className="btn btn-primary form-submit" type="submit" disabled={sending}>
+        {sending ? 'Sending…' : 'Send request'}
       </button>
       <p className="form-note">
         Prefer to talk? Call{' '}
