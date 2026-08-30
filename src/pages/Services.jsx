@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
+import PageHero from '../components/PageHero'
 import ServiceCard from '../components/ServiceCard'
+import SiteImg from '../components/SiteImg'
 import { PhoneIcon } from '../components/Icons'
 import { company, reviews, services } from '../data/site'
 
 export default function Services() {
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
+      <PageHero>
           <span className="eyebrow light">Residential and commercial</span>
           <h1>Bellford Plumbing services</h1>
           <p>
@@ -23,8 +24,7 @@ export default function Services() {
               Request service
             </Link>
           </div>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section">
@@ -46,7 +46,7 @@ export default function Services() {
               </a>
             </div>
             <div className="spotlight-photo">
-              <img src="/images/cta-vans.jpg" alt="Bellford Plumbing service vans" />
+              <SiteImg src="/images/cta-vans.webp" alt="Bellford Plumbing service vans" />
             </div>
           </div>
         </section>
@@ -85,7 +85,7 @@ export default function Services() {
                 <article className="review" key={r.name}>
                   <div className="stars">★★★★★</div>
                   <p>{r.text}</p>
-                  <h4>{r.name}</h4>
+                  <p className="review-name">{r.name}</p>
                 </article>
               ))}
             </div>

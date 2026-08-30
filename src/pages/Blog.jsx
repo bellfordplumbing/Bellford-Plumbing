@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
+import PageHero from '../components/PageHero'
+import SiteImg from '../components/SiteImg'
 import { company, posts } from '../data/site'
 
 export default function Blog() {
@@ -7,8 +9,7 @@ export default function Blog() {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
+      <PageHero>
           <span className="eyebrow light">Bellford Plumbing’s blog</span>
           <h1>Guides for Houston homeowners</h1>
           <p>
@@ -23,8 +24,7 @@ export default function Blog() {
               Request service
             </Link>
           </div>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section">
@@ -34,7 +34,7 @@ export default function Blog() {
               <h2>Start here</h2>
             </div>
             <Link className="feature-post" to={`/blog/${featured.slug}`}>
-              <img src={featured.image} alt="" />
+              <SiteImg src={featured.image} alt="" />
               <div className="body">
                 <span className="eyebrow">{featured.date}</span>
                 <h3>{featured.title}</h3>
@@ -55,7 +55,7 @@ export default function Blog() {
           <div className="cards">
             {rest.map((p) => (
               <Link className="card" key={p.slug} to={`/blog/${p.slug}`}>
-                <img src={p.image} alt="" />
+                <SiteImg src={p.image} alt="" />
                 <div className="body">
                   <h3>{p.title}</h3>
                   <p>{p.date}</p>

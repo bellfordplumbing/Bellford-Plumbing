@@ -1,6 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
+import PageHero from '../components/PageHero'
 import ServiceLinks from '../components/ServiceLinks'
+import SiteImg from '../components/SiteImg'
 import { PhoneIcon } from '../components/Icons'
 import { company, services } from '../data/site'
 
@@ -23,8 +25,7 @@ export default function ServiceDetail() {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
+      <PageHero>
           <span className="eyebrow light">Houston plumbing</span>
           <h1>{service.title}</h1>
           <p>{service.intro}</p>
@@ -36,14 +37,13 @@ export default function ServiceDetail() {
               Request service
             </Link>
           </div>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section">
           <div className="wrap spotlight">
             <div className="spotlight-photo">
-              <img src={service.image} alt={service.title} />
+              <SiteImg src={service.image} alt={service.title} />
             </div>
             <div className="spotlight-copy">
               <span className="eyebrow">{service.short}</span>

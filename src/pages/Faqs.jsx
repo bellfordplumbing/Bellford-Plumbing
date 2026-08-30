@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 import FaqList from '../components/FaqList'
 import CtaBanner from '../components/CtaBanner'
 import ContactForm from '../components/ContactForm'
+import PageHero from '../components/PageHero'
 import { PhoneIcon } from '../components/Icons'
 import { company, faqs } from '../data/site'
 
 export default function Faqs() {
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
+      <PageHero>
           <span className="eyebrow light">Read our FAQs</span>
           <h1>Houston plumber FAQs</h1>
           <p>
@@ -23,8 +23,7 @@ export default function Faqs() {
               Request service
             </Link>
           </div>
-        </div>
-      </section>
+      </PageHero>
       <div className="trust-band">
         <section className="section">
           <div className="wrap">

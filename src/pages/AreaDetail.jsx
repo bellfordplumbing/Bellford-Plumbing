@@ -1,6 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
+import PageHero from '../components/PageHero'
 import ServiceLinks from '../components/ServiceLinks'
+import SiteImg from '../components/SiteImg'
 import { PinIcon, PhoneIcon } from '../components/Icons'
 import { areas, company, services } from '../data/site'
 
@@ -23,8 +25,7 @@ export default function AreaDetail() {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
+      <PageHero>
           <span className="eyebrow light">Bellford Plumbing</span>
           <h1>Plumber in {area.title}, TX</h1>
           <p>{area.blurb}</p>
@@ -36,14 +37,13 @@ export default function AreaDetail() {
               Book service
             </Link>
           </div>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section">
           <div className="wrap spotlight">
             <div className="spotlight-photo">
-              <img src="/images/crew-portrait.jpg" alt={`Bellford Plumbing serving ${area.title}`} />
+              <SiteImg src="/images/crew-portrait.webp" alt={`Bellford Plumbing serving ${area.title}`} />
             </div>
             <div className="spotlight-copy">
               <span className="eyebrow">Local plumbing</span>

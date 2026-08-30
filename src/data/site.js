@@ -29,7 +29,7 @@ export const services = [
     slug: 'emergency-plumbing-services',
     title: 'Emergency Plumbing Services',
     short: 'Available for all your plumbing emergencies',
-    image: '/images/emergency.png',
+    image: '/images/emergency.webp',
     intro:
       'Your plumbing emergencies can strike at any time. Whether it’s a burst pipe, severe leak, or a clogged drain, our team provides prompt and efficient emergency plumbing services for homes and businesses in Houston.',
     body: [
@@ -41,7 +41,7 @@ export const services = [
     slug: 'leak-detection-and-repair-houston',
     title: 'Leak Detection & Repair',
     short: 'Accurate leak detection with reliable repairs',
-    image: '/images/under-slab.png',
+    image: '/images/under-slab.webp',
     intro:
       'Undetected leaks can cause significant damage to your property. Our leak detection technology lets us identify the source of leaks quickly and accurately — including hidden pipe leaks and slab leaks.',
     body: [
@@ -53,7 +53,7 @@ export const services = [
     slug: 'houston-drain-cleaning-service',
     title: 'Drain Cleaning Services',
     short: 'Clear even the toughest blockages',
-    image: '/images/drain-cleaning.png',
+    image: '/images/drain-cleaning.webp',
     intro:
       'Clogged drains are more than an inconvenience. Our professional drain cleaning services use current equipment and techniques to clear tough blockages and restore flow.',
     body: [
@@ -65,7 +65,7 @@ export const services = [
     slug: 'water-heater-installation-and-repair',
     title: 'Water Heater Installation & Repair',
     short: 'Tank and tankless water heater experts',
-    image: '/images/blog-heater.png',
+    image: '/images/blog-heater.webp',
     intro:
       'Whether you need a new water heater installed or your existing one repaired, our technicians handle tank and tankless units so you have hot water when you need it.',
     body: [
@@ -77,7 +77,7 @@ export const services = [
     slug: 'sewer-line-inspection-and-repair-services',
     title: 'Sewer Line Inspection & Repair',
     short: 'Camera inspections and lasting repairs',
-    image: '/images/sewer-line.png',
+    image: '/images/sewer-line.webp',
     intro:
       'Sewer line issues can lead to severe property damage if they are not addressed. We inspect lines thoroughly and repair them so your sewer system operates efficiently.',
     body: [
@@ -89,7 +89,7 @@ export const services = [
     slug: 'sewer-line-cleaning',
     title: 'Sewer Line Cleaning',
     short: 'Keep the main line flowing',
-    image: '/images/sewer-cleaning.png',
+    image: '/images/sewer-cleaning.webp',
     intro:
       'A clogged sewer line can shut down every drain in the house. We clean main lines so wastewater leaves the property the way it should.',
     body: [
@@ -100,7 +100,7 @@ export const services = [
     slug: 'garbage-disposal-repair-replacement',
     title: 'Garbage Disposal Repair & Replacement',
     short: 'Jams, leaks, and full replacements',
-    image: '/images/garbage-disposal.png',
+    image: '/images/garbage-disposal.webp',
     intro:
       'A jammed, leaking, or silent disposal disrupts the kitchen fast. We diagnose the unit and repair or replace it so you can get back to normal.',
     body: [
@@ -111,7 +111,7 @@ export const services = [
     slug: 'gas-line-installation',
     title: 'Gas Line Installation',
     short: 'Licensed gas line work for your home',
-    image: '/images/gas-line.png',
+    image: '/images/gas-line.webp',
     intro:
       'Need a new gas line for a stove, dryer, water heater, fireplace, or grill? Bellford Plumbing installs gas lines to code for Houston homes and businesses.',
     body: [
@@ -122,7 +122,7 @@ export const services = [
     slug: 'gas-leak-repair',
     title: 'Gas Leak Repair',
     short: 'Fast response when you smell gas',
-    image: '/images/gas-leak.png',
+    image: '/images/gas-leak.webp',
     intro:
       'If you smell gas, hear hissing near a line, or notice a sulfur odor, leave the area, avoid flames, and call for help. We locate and repair gas leaks for Houston properties.',
     body: [
@@ -133,7 +133,7 @@ export const services = [
     slug: 'dishwasher-installation-repair',
     title: 'Dishwasher Installation & Repair',
     short: 'Hookups, leaks, and replacements',
-    image: '/images/dishwasher.png',
+    image: '/images/dishwasher.webp',
     intro:
       'From a new dishwasher hookup to a leak under the sink, we handle the plumbing side of dishwasher installation and repair.',
     body: [
@@ -144,7 +144,7 @@ export const services = [
     slug: 'under-slab-plumbing-service-in-houston',
     title: 'Under Slab Plumbing Service',
     short: 'Slab leak detection and repair',
-    image: '/images/under-slab.png',
+    image: '/images/under-slab.webp',
     intro:
       'Houston slab foundations hide pipes that can leak for months. We detect under-slab leaks and repair them with a plan that protects your home.',
     body: [
@@ -155,7 +155,7 @@ export const services = [
     slug: 'water-pressure-testing-and-adjustment',
     title: 'Water Pressure Testing & Adjustment',
     short: 'Diagnose low or high pressure',
-    image: '/images/water-pressure.png',
+    image: '/images/water-pressure.webp',
     intro:
       'Water pressure that is too low or too high is hard on fixtures and pipes. We test, diagnose, and adjust pressure so the house feels right.',
     body: [
@@ -166,7 +166,7 @@ export const services = [
     slug: 'water-filtration-and-softening-systems',
     title: 'Water Filtration & Softening Systems',
     short: 'Cleaner, softer water for Houston homes',
-    image: '/images/water-filtration.png',
+    image: '/images/water-filtration.webp',
     intro:
       'Houston hard water leaves scale on fixtures and shortens appliance life. We install filtration and softening systems that improve taste, clarity, and plumbing health.',
     body: [
@@ -177,7 +177,7 @@ export const services = [
     slug: 'faucet-and-sink-repair',
     title: 'Faucet & Sink Repair',
     short: 'Drips, clogs, and fixture upgrades',
-    image: '/images/faucet-sink.png',
+    image: '/images/faucet-sink.webp',
     intro:
       'A dripping faucet wastes water and money. We repair and replace faucets and sinks for kitchens, baths, and laundry rooms.',
     body: [
@@ -188,7 +188,7 @@ export const services = [
     slug: 'backflow-service-houston',
     title: 'Backflow Prevention Services',
     short: 'Protect your drinking water',
-    image: '/images/backflow.png',
+    image: '/images/backflow.webp',
     intro:
       'Backflow can push contaminated water into the potable supply. We install, test, and service backflow prevention devices for Houston properties.',
     body: [
@@ -199,7 +199,7 @@ export const services = [
     slug: 'toilet-repair-and-installation',
     title: 'Toilet Repair & Installation',
     short: 'Leaks, clogs, and new toilets',
-    image: '/images/toilet.png',
+    image: '/images/toilet.webp',
     intro:
       'Bellford Plumbing handles toilet installation and repair — from new fixtures to leaks, clogs, and flushing problems.',
     body: [
@@ -210,7 +210,7 @@ export const services = [
     slug: 'hydro-jetting',
     title: 'Hydro Jetting',
     short: 'High-pressure cleaning for stubborn lines',
-    image: '/images/hydro-jetting.png',
+    image: '/images/hydro-jetting.webp',
     intro:
       'Hydro jetting uses high-pressure water to scour grease, scale, and debris from drain and sewer lines — more thorough than a standard cable in many cases.',
     body: [
@@ -221,7 +221,7 @@ export const services = [
     slug: 'kitchen-plumbing-remodeling',
     title: 'Kitchen Plumbing Remodeling',
     short: 'Rough-in, fixtures, and appliance hookups',
-    image: '/images/kitchen.png',
+    image: '/images/kitchen.webp',
     intro:
       'A kitchen remodel lives or dies on the plumbing. We handle pipe reroutes, fixture upgrades, and appliance connections so the new kitchen works as good as it looks.',
     body: [
@@ -232,7 +232,7 @@ export const services = [
     slug: 'bathroom-plumbing-remodeling',
     title: 'Bathroom Plumbing Remodeling',
     short: 'Tubs, showers, toilets, and vanities',
-    image: '/images/bathroom.png',
+    image: '/images/bathroom.webp',
     intro:
       'Bellford Plumbing supports bathroom remodels with drain upgrades, fixture installs, and pipe reroutes done to code.',
     body: [
@@ -243,7 +243,7 @@ export const services = [
     slug: 'sump-pump-installation-and-maintenance',
     title: 'Sump Pump Installation & Maintenance',
     short: 'Help keep storm water out of the home',
-    image: '/images/emergency-crew.png',
+    image: '/images/emergency-crew.webp',
     intro:
       'A working sump pump is one of the best defenses against basement and low-area flooding. We install, maintain, and repair sump pumps.',
     body: [
@@ -554,7 +554,7 @@ export const posts = [
     slug: 'tankless-vs-traditional-water-heaters-which-is-right',
     title: 'Tankless vs. Traditional Water Heaters: Which is right for you?',
     date: 'November 7, 2024',
-    image: '/images/blog-tankless.png',
+    image: '/images/blog-tankless.webp',
     excerpt:
       'When it comes to choosing the right water heater for your home, there are a lot of factors to consider. The two main options are traditional tank water heaters and modern tankless units.',
     content: [
@@ -569,7 +569,7 @@ export const posts = [
     slug: 'never-ignore-a-leaky-faucet-and-how-to-fix-it',
     title: 'Why You Should Never Ignore a Leaky Faucet and How to Fix It',
     date: 'November 3, 2024',
-    image: '/images/blog-faucet.png',
+    image: '/images/blog-faucet.webp',
     excerpt:
       'A leaky faucet may seem like a minor inconvenience, but a steady drip wastes water, raises bills, and can point to a bigger plumbing problem.',
     content: [
@@ -582,7 +582,7 @@ export const posts = [
     slug: 'how-to-prevent-drain-clogs-tips',
     title: 'How to Prevent Drain Clogs: Tips from Professional Plumbers',
     date: 'October 25, 2024',
-    image: '/images/blog-drains.png',
+    image: '/images/blog-drains.webp',
     excerpt:
       'Clogged drains are one of the most common plumbing problems homeowners face. A few habits will keep sinks, showers, and toilets moving.',
     content: [
@@ -595,7 +595,7 @@ export const posts = [
     slug: 'water-heater-5-common-problems-solutions',
     title: 'Water Heater Not Working? Here Are 5 Common Problems and Solutions',
     date: 'October 20, 2024',
-    image: '/images/blog-heater.png',
+    image: '/images/blog-heater.webp',
     excerpt:
       'Nothing is more frustrating than an ice-cold shower. Here are common water heater problems we see in Houston and what usually fixes them.',
     content: [
@@ -610,7 +610,7 @@ export const posts = [
     slug: 'when-to-call-a-professional-plumber-signs',
     title: 'When to Call a Professional Plumber: Signs Your Houston Home Needs Immediate Attention',
     date: 'August 22, 2024',
-    image: '/images/blog-call.png',
+    image: '/images/blog-call.webp',
     excerpt:
       'Plumbing problems escalate quickly. Knowing when to call a licensed plumber can save you time, flooring, and a much larger repair.',
     content: [
@@ -623,7 +623,7 @@ export const posts = [
     slug: 'understanding-houstons-hard-water',
     title: 'Understanding Houston’s Hard Water: How It Affects Your Plumbing',
     date: 'August 21, 2024',
-    image: '/images/blog-hard-water.png',
+    image: '/images/blog-hard-water.webp',
     excerpt:
       'Houston is known for hard water. It is not a health scare, but it is hard on pipes, heaters, and fixtures. Here is what you can do about it.',
     content: [

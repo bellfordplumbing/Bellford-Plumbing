@@ -9,12 +9,26 @@
       content="Bellford Plumbing — licensed plumbing service in Houston and Greater Houston. Emergency plumbing, leak detection, drain cleaning, water heaters, and more. Call (346) 451-2076."
     />
     <title>Bellford Plumbing | Licensed Plumbers in Houston, TX</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      (function () {
+        var home = location.pathname === '/' || location.pathname === '/index.html'
+        var link = document.createElement('link')
+        link.rel = 'preload'
+        link.as = 'image'
+        link.fetchPriority = 'high'
+        link.imageSizes = '100vw'
+        if (home) {
+          link.href = '/images/hero-fleet-sm.webp'
+          link.imageSrcset = '/images/hero-fleet-sm.webp 768w, /images/hero-fleet.webp 1400w'
+        } else {
+          link.href = '/images/cta-vans-sm.webp'
+          link.imageSrcset = '/images/cta-vans-sm.webp 768w, /images/cta-vans.webp 1400w'
+        }
+        document.head.appendChild(link)
+      })()
+    </script>
   </head>
   <body>
     <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>

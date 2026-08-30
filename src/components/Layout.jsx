@@ -36,7 +36,7 @@ export default function Layout() {
       <header className="header">
         <div className="wrap header-inner">
           <NavLink to="/" className="logo" aria-label="Bellford Plumbing home">
-            <img src="/images/logo-white.png" alt="Bellford Plumbing Service" />
+            <img src="/images/logo-white.png" alt="Bellford Plumbing Service" width={180} height={158} decoding="async" />
           </NavLink>
 
           <nav className={open ? 'nav open' : 'nav'} aria-label="Main">
@@ -99,7 +99,7 @@ export default function Layout() {
       <footer className="footer">
         <div className="wrap footer-grid">
           <div>
-            <img className="footer-logo" src="/images/logo-white.png" alt="Bellford Plumbing" />
+            <img className="footer-logo" src="/images/logo-white.png" alt="Bellford Plumbing" width={180} height={158} decoding="async" />
             <p>
               Licensed plumbing for homes and businesses in Houston and Greater Houston.
               Honest pricing, same-day help when we can, and work that holds up.
@@ -111,7 +111,7 @@ export default function Layout() {
             </p>
           </div>
           <div>
-            <h4>Our services</h4>
+            <h3>Our services</h3>
             <ul>
               {services.slice(0, 8).map((s) => (
                 <li key={s.slug}>
@@ -121,7 +121,7 @@ export default function Layout() {
             </ul>
           </div>
           <div>
-            <h4>Areas we serve</h4>
+            <h3>Areas we serve</h3>
             <ul>
               {areas.slice(0, 8).map((a) => (
                 <li key={a.slug}>
@@ -131,7 +131,7 @@ export default function Layout() {
             </ul>
           </div>
           <div>
-            <h4>Get in touch</h4>
+            <h3>Get in touch</h3>
             <p>
               {company.address}
               <br />

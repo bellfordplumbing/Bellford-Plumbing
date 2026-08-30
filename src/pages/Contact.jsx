@@ -1,12 +1,12 @@
 import ContactForm from '../components/ContactForm'
+import PageHero from '../components/PageHero'
 import { ClockIcon, MailIcon, PhoneIcon, PinIcon } from '../components/Icons'
 import { company } from '../data/site'
 
 export default function Contact() {
   return (
     <>
-      <section className="page-hero contact-hero">
-        <div className="wrap">
+      <PageHero className="contact-hero">
           <span className="eyebrow light">Licensed plumbers in Houston</span>
           <h1>Let’s get your plumbing fixed</h1>
           <p>
@@ -21,8 +21,7 @@ export default function Contact() {
               Email us
             </a>
           </div>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section contact-page">
@@ -70,6 +69,8 @@ export default function Contact() {
                 <iframe
                   title="Bellford Plumbing location"
                   src="https://maps.google.com/maps?q=5819%20Picasso%20Pl%20Houston%20TX%2077096&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="600"
+                  height="450"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />

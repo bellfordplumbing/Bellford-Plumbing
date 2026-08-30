@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import ServiceIcon from './Icons'
+import SiteImg from './SiteImg'
 
 export const iconBySlug = {
   'emergency-plumbing-services': 'emergency',
@@ -30,7 +31,7 @@ export default function ServiceCard({ service, cta = 'View service' }) {
   return (
     <Link className="card service-card" to={`/services/${service.slug}`}>
       <div className="card-media">
-        <img src={service.image} alt={service.title} />
+        <SiteImg src={service.image} alt={service.title} />
         <span className="photo-wash" aria-hidden="true" />
         <span className="card-icon">
           <ServiceIcon name={icon} />

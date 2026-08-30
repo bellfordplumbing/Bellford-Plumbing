@@ -1,5 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
+import PageHero from '../components/PageHero'
+import SiteImg from '../components/SiteImg'
 import { posts } from '../data/site'
 
 export default function BlogPost() {
@@ -21,19 +23,17 @@ export default function BlogPost() {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
+      <PageHero>
           <span className="eyebrow light">{post.date}</span>
           <h1>{post.title}</h1>
           <p>{post.excerpt}</p>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section">
           <div className="wrap">
             <div className="spotlight-photo" style={{ minHeight: 380 }}>
-              <img src={post.image} alt="" style={{ minHeight: 380 }} />
+              <SiteImg src={post.image} alt="" style={{ minHeight: 380 }} />
             </div>
           </div>
         </section>
@@ -62,7 +62,7 @@ export default function BlogPost() {
             <div className="cards">
               {morePosts.map((p) => (
                 <Link className="card" key={p.slug} to={`/blog/${p.slug}`}>
-                  <img src={p.image} alt="" />
+                  <SiteImg src={p.image} alt="" />
                   <div className="body">
                     <h3>{p.title}</h3>
                     <p>{p.excerpt}</p>

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
+import PageHero from '../components/PageHero'
+import SiteImg from '../components/SiteImg'
 import { PhoneIcon } from '../components/Icons'
 import { company, values } from '../data/site'
 
@@ -13,8 +15,7 @@ const reasons = [
 export default function About() {
   return (
     <>
-      <section className="page-hero about-hero">
-        <div className="wrap">
+      <PageHero className="about-hero">
           <span className="eyebrow light">About Bellford Plumbing</span>
           <h1>Houston plumbers you can count on</h1>
           <p>
@@ -29,8 +30,7 @@ export default function About() {
               Request service
             </Link>
           </div>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section about-page">
@@ -60,7 +60,7 @@ export default function About() {
 
             <div className="spotlight">
               <div className="spotlight-photo">
-                <img src="/images/crew-on-site.jpg" alt="Bellford Plumbing technicians on a sewer repair" />
+                <SiteImg src="/images/crew-on-site.webp" alt="Bellford Plumbing technicians on a sewer repair" />
               </div>
               <div className="spotlight-copy">
                 <span className="eyebrow">Our story</span>

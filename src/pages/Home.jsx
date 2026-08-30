@@ -5,6 +5,7 @@ import FaqList from '../components/FaqList'
 import Accordion from '../components/Accordion'
 import ServiceCard from '../components/ServiceCard'
 import ServiceIcon, { PhoneIcon } from '../components/Icons'
+import SiteImg from '../components/SiteImg'
 import {
   chooseSteps,
   company,
@@ -20,6 +21,17 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <img
+          className="hero-media"
+          src="/images/hero-fleet.webp"
+          srcSet="/images/hero-fleet-sm.webp 768w, /images/hero-fleet.webp 1400w"
+          sizes="100vw"
+          width={1400}
+          height={933}
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+        />
         <div className="wrap hero-copy">
           <p className="hero-kicker">
             Houston plumber: water heater repair, toilet repair, clogged drains, and more
@@ -76,9 +88,9 @@ export default function Home() {
         <section className="section choose-section">
           <div className="wrap choose-grid">
             <div className="choose-photo-wrap">
-              <img
+              <SiteImg
                 className="choose-photo"
-                src="/images/crew-on-site.jpg"
+                src="/images/crew-on-site.webp"
                 alt="Bellford Plumbing crew working on a Houston job site"
               />
             </div>
@@ -124,7 +136,7 @@ export default function Home() {
                 Call us {company.phone}
               </a>
             </div>
-            <img src="/images/cta-vans.jpg" alt="Bellford Plumbing service vans" />
+            <SiteImg src="/images/cta-vans.webp" alt="Bellford Plumbing service vans" />
           </div>
         </section>
 
@@ -165,7 +177,7 @@ export default function Home() {
                 <article className="review" key={r.name}>
                   <div className="stars">★★★★★</div>
                   <p>{r.text}</p>
-                  <h4>{r.name}</h4>
+                  <p className="review-name">{r.name}</p>
                 </article>
               ))}
             </div>
@@ -181,7 +193,7 @@ export default function Home() {
             <div className="cards">
               {posts.slice(0, 3).map((p) => (
                 <Link className="card" key={p.slug} to={`/blog/${p.slug}`}>
-                <img src={p.image} alt="" />
+                <SiteImg src={p.image} alt="" />
                   <div className="body">
                     <h3>{p.title}</h3>
                     <p>{p.excerpt}</p>

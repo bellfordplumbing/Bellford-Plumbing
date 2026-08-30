@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import CtaBanner from '../components/CtaBanner'
+import PageHero from '../components/PageHero'
+import SiteImg from '../components/SiteImg'
 import { PhoneIcon } from '../components/Icons'
 import { areas, company } from '../data/site'
 
 export default function Areas() {
   return (
     <>
-      <section className="page-hero">
-        <div className="wrap">
+      <PageHero>
           <span className="eyebrow light">Service areas</span>
           <h1>Plumbing services in Houston & Greater Houston</h1>
           <p>
@@ -22,14 +23,13 @@ export default function Areas() {
               Request service
             </Link>
           </div>
-        </div>
-      </section>
+      </PageHero>
 
       <div className="trust-band">
         <section className="section">
           <div className="wrap spotlight">
             <div className="spotlight-photo">
-              <img src="/images/crew-portrait.jpg" alt="Bellford Plumbing crew" />
+              <SiteImg src="/images/crew-portrait.webp" alt="Bellford Plumbing crew" />
             </div>
             <div className="spotlight-copy">
               <span className="eyebrow">Communities we cover</span>
