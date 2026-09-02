@@ -6,6 +6,8 @@ import Accordion from '../components/Accordion'
 import ServiceCard from '../components/ServiceCard'
 import ServiceIcon, { PhoneIcon } from '../components/Icons'
 import SiteImg from '../components/SiteImg'
+import ReviewPopup from '../components/ReviewPopup'
+import PageSeo from '../components/PageSeo'
 import {
   chooseSteps,
   company,
@@ -16,10 +18,16 @@ import {
   reviews,
   services,
 } from '../data/site'
+import { homeSchema } from '../data/globalSchema'
 
 export default function Home() {
   return (
     <>
+      <PageSeo
+        canonical="https://bellford-plumbing.com/"
+        schema={homeSchema}
+      />
+
       <section className="hero">
         <img
           className="hero-media"
@@ -165,7 +173,7 @@ export default function Home() {
       </div>
 
       <div className="stories-band">
-        <section className="section">
+        <section className="section" id="reviews">
           <div className="wrap">
             <div className="section-head center">
               <span className="eyebrow light">What our clients say</span>
@@ -181,6 +189,8 @@ export default function Home() {
                 </article>
               ))}
             </div>
+
+            <ReviewPopup />
           </div>
         </section>
 

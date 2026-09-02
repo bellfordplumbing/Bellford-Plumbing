@@ -1,3 +1,5 @@
+import { newServicePages } from './newServicePages.js'
+
 export const company = {
   name: 'Bellford Plumbing',
   tagline: 'Texas Professional Plumbers',
@@ -116,17 +118,6 @@ export const services = [
       'Need a new gas line for a stove, dryer, water heater, fireplace, or grill? Bellford Plumbing installs gas lines to code for Houston homes and businesses.',
     body: [
       'Gas work is not a DIY project. Improper installation can void warranties and create a serious safety risk. Our licensed plumbers run new lines, tie in appliances, and pressure-test the work before we leave.',
-    ],
-  },
-  {
-    slug: 'gas-leak-repair',
-    title: 'Gas Leak Repair',
-    short: 'Fast response when you smell gas',
-    image: '/images/gas-leak.webp',
-    intro:
-      'If you smell gas, hear hissing near a line, or notice a sulfur odor, leave the area, avoid flames, and call for help. We locate and repair gas leaks for Houston properties.',
-    body: [
-      'We inspect fittings, appliances, and buried lines, repair the leak, and verify the system holds pressure. Safety comes first — then we restore service so you can cook, heat water, and run appliances again.',
     ],
   },
   {
@@ -250,6 +241,7 @@ export const services = [
       'We size the pump, set the pit and discharge, and check float switches so the system kicks on when it should — before water reaches finished floors.',
     ],
   },
+  ...newServicePages,
 ]
 
 export const areas = [

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bellford-plumbing.com/sitemap.xml

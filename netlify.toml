@@ -12,3 +12,299 @@
   for = "/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Legacy indexed URLs -> current canonical React routes
+[[redirects]]
+  from = "/about-us"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about-us/"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emergency-plumbing-services"
+  to = "/services/emergency-plumbing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emergency-plumbing-services/"
+  to = "/services/emergency-plumbing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/leak-detection-and-repair-houston"
+  to = "/services/leak-detection-and-repair-houston/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/leak-detection-and-repair-houston/"
+  to = "/services/leak-detection-and-repair-houston/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/houston-drain-cleaning-service"
+  to = "/services/houston-drain-cleaning-service/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/houston-drain-cleaning-service/"
+  to = "/services/houston-drain-cleaning-service/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/water-heater-installation-and-repair"
+  to = "/services/water-heater-installation-and-repair/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/water-heater-installation-and-repair/"
+  to = "/services/water-heater-installation-and-repair/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sewer-line-inspection-and-repair-services"
+  to = "/services/sewer-line-inspection-and-repair-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sewer-line-inspection-and-repair-services/"
+  to = "/services/sewer-line-inspection-and-repair-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/garbage-disposal-repair-replacement"
+  to = "/services/garbage-disposal-repair-replacement/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/garbage-disposal-repair-replacement/"
+  to = "/services/garbage-disposal-repair-replacement/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gas-line-installation"
+  to = "/services/gas-line-installation/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gas-line-installation/"
+  to = "/services/gas-line-installation/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gas-leak-repair"
+  to = "/services/gas-leak/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gas-leak-repair/"
+  to = "/services/gas-leak/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/dishwasher-installation-repair"
+  to = "/services/dishwasher-installation-repair/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/dishwasher-installation-repair/"
+  to = "/services/dishwasher-installation-repair/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sewer-line-cleaning"
+  to = "/services/sewer-line-cleaning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sewer-line-cleaning/"
+  to = "/services/sewer-line-cleaning/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/under-slab-plumbing-service-in-houston"
+  to = "/services/under-slab-plumbing-service-in-houston/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/under-slab-plumbing-service-in-houston/"
+  to = "/services/under-slab-plumbing-service-in-houston/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/water-pressure-testing-and-adjustment"
+  to = "/services/water-pressure-testing-and-adjustment/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/water-pressure-testing-and-adjustment/"
+  to = "/services/water-pressure-testing-and-adjustment/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/water-filtration-and-softening-systems"
+  to = "/services/water-filtration-and-softening-systems/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/water-filtration-and-softening-systems/"
+  to = "/services/water-filtration-and-softening-systems/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faucet-and-sink-repair"
+  to = "/services/faucet-and-sink-repair/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faucet-and-sink-repair/"
+  to = "/services/faucet-and-sink-repair/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/backflow-service-houston"
+  to = "/services/backflow-service-houston/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/backflow-service-houston/"
+  to = "/services/backflow-service-houston/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/toilet-repair-and-installation"
+  to = "/services/toilet-repair-and-installation/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/toilet-repair-and-installation/"
+  to = "/services/toilet-repair-and-installation/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-missouri-city"
+  to = "/service-areas/missouri-city/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-missouri-city/"
+  to = "/service-areas/missouri-city/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-sugar-land"
+  to = "/service-areas/sugar-land/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-sugar-land/"
+  to = "/service-areas/sugar-land/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-richmond"
+  to = "/service-areas/richmond/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-richmond/"
+  to = "/service-areas/richmond/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-alief"
+  to = "/service-areas/alief/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-in-alief/"
+  to = "/service-areas/alief/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bellaire"
+  to = "/service-areas/bellaire/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bellaire/"
+  to = "/service-areas/bellaire/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-the-woodlands"
+  to = "/service-areas/the-woodlands/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/plumbing-services-the-woodlands/"
+  to = "/service-areas/the-woodlands/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/gas-leak-repair"
+  to = "/services/gas-leak/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/gas-leak-repair/"
+  to = "/services/gas-leak/"
+  status = 301
+  force = true
+
+# React Router SPA fallback.
+# Existing static files such as sitemap.xml/assets are served normally first.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

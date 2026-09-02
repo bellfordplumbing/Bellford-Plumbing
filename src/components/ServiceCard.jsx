@@ -4,6 +4,11 @@ import SiteImg from './SiteImg'
 
 export const iconBySlug = {
   'emergency-plumbing-services': 'emergency',
+  'plumbing-companies': 'water',
+  'commercial-plumbers': 'inspect',
+  'plumbing-services': 'water',
+  'plumbing-frozen-pipes': 'emergency',
+  'gas-leak': 'gasleak',
   'leak-detection-and-repair-houston': 'leak',
   'houston-drain-cleaning-service': 'drain',
   'water-heater-installation-and-repair': 'heater',
@@ -11,7 +16,6 @@ export const iconBySlug = {
   'sewer-line-cleaning': 'sewer',
   'garbage-disposal-repair-replacement': 'garbage',
   'gas-line-installation': 'gas',
-  'gas-leak-repair': 'gasleak',
   'dishwasher-installation-repair': 'dishwasher',
   'under-slab-plumbing-service-in-houston': 'slab',
   'water-pressure-testing-and-adjustment': 'pressure',

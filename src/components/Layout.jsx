@@ -55,7 +55,7 @@ export default function Layout() {
                     <span className="menu-icon">
                       <ServiceIcon name={iconBySlug[s.slug] || 'water'} />
                     </span>
-                    {s.title}
+                    {s.navTitle || s.title}
                   </NavLink>
                 ))}
               </div>
