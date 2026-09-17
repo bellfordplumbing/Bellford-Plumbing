@@ -43,7 +43,7 @@ export const newServicePages = [
       },
       {
         q: 'What if I have a plumbing emergency outside office hours?',
-        a: 'Our office hours are Monday through Friday, 7:00 AM – 5:00 PM. Plumbing emergencies do not follow a calendar — call (346) 451-2076 and we will get you on the schedule as quickly as we can.',
+        a: 'Our office hours are Monday through Friday, 6:00 AM – 11:00 PM. Plumbing emergencies do not follow a calendar — call (346) 451-2076 and we will get you on the schedule as quickly as we can.',
       },
       {
         q: 'What plumbing services do you cover?',

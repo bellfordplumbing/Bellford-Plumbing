@@ -8,7 +8,7 @@ export const company = {
   email: 'bellfordplumbing@gmail.com',
   address: '5819 Picasso Pl, Houston, TX 77096',
   hours: [
-    { day: 'Monday – Friday', time: '7:00 AM – 5:00 PM' },
+    { day: 'Monday – Friday', time: '6:00 AM – 11:00 PM' },
     { day: 'Saturday', time: 'Closed' },
     { day: 'Sunday', time: 'Closed' },
   ],
@@ -537,7 +537,7 @@ export const faqs = [
   },
   {
     q: 'What are your hours?',
-    a: 'Our office hours are Monday through Friday, 7:00 AM – 5:00 PM. Plumbing emergencies do not follow a calendar — call (346) 451-2076 and we will get you on the schedule as quickly as we can.',
+    a: 'Our office hours are Monday through Friday, 6:00 AM – 11:00 PM. Plumbing emergencies do not follow a calendar — call (346) 451-2076 and we will get you on the schedule as quickly as we can.',
   },
 ]
 

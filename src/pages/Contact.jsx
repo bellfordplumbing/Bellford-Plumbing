@@ -33,7 +33,7 @@ export default function Contact() {
                 </span>
                 <span className="contact-tile-label">Call</span>
                 <strong>{company.phone}</strong>
-                <span>Mon–Fri 7AM–5PM</span>
+                <span>Mon–Fri 6AM–11PM</span>
               </a>
               <a className="contact-tile" href={`mailto:${company.email}`}>
                 <span className="contact-tile-icon">

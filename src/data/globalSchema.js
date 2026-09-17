@@ -107,8 +107,8 @@ export const homeSchema = {
             'Thursday',
             'Friday',
           ],
-          opens: '07:00',
-          closes: '17:00',
+          opens: '06:00',
+          closes: '23:00',
         },
       ],
 

@@ -29,7 +29,7 @@ export default function Layout() {
             <span>We are open for Houston plumbing service</span>
             <span>{company.licensed} · {company.tagline}</span>
           </div>
-          <span className="topbar-hours">Mon–Fri 7AM–5PM</span>
+          <span className="topbar-hours">Mon–Fri 6AM–11PM</span>
         </div>
       </div>
 
