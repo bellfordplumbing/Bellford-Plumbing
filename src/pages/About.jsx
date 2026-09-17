@@ -53,7 +53,7 @@ export default function About() {
               </div>
               <div className="contact-tile">
                 <span className="contact-tile-label">Hours</span>
-                <strong>Mon–Fri 6–11</strong>
+                <strong>Mon–Fri 6AM–11PM</strong>
                 <span>Call anyway for emergencies — we will get you on the schedule.</span>
               </div>
             </div>
